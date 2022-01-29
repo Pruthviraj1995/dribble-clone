@@ -9,6 +9,7 @@ export const Container = styled.div`
   width: 100%;
   align-items: center;
   padding: 64px 120px;
+  margin-bottom: 20px;
 
   .title {
     color: black;
@@ -21,14 +22,10 @@ export const Container = styled.div`
 `;
 
 export const ImageWrapper = styled.img`
-  height: 50px;
-  width: 50px;
+  height: ${({ height }) => (height ? `${height}px` : '100%')};
+  width: ${({ width }) => (width ? `${width}px` : '100%')};
   border-radius: 50%;
-  //   background-color: red;
   border: 0.5px solid black;
-  max-height: 200px;
-  max-width: 200px;
-  margin-right: 16px;
 `;
 
 export const ContainerInfoWrapper = styled.div`
@@ -37,4 +34,17 @@ export const ContainerInfoWrapper = styled.div`
   width: 100%;
   align-items: center;
   margin-bottom: 40px;
+`;
+
+export const AvatarLine = styled.span`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #e7e7e9;
+  margin: 0;
+  padding: 0;
+  height: 1px;
 `;

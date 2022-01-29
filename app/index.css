@@ -3,6 +3,11 @@
     sans-serif;
 }
 
+body {
+  height: 100%;
+  width: 100%;
+}
+
 .pink-color {
   color: #6e6d7a;
 }

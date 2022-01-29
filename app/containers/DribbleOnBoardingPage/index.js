@@ -1,7 +1,13 @@
 import React from 'react';
 import { Carousel } from 'components/Carousel';
-import { ContainerInfo } from './ContainerInfo';
+import OnBoardImage1 from 'images/onboard-image-1.png';
+import OnBoardImage2 from 'images/onboard-image-2.png';
+import OnBoardImage3 from 'images/onboard-image-3.png';
+import OnBoardImage4 from 'images/onboard-image-4.png';
+import OnBoardImage5 from 'images/onboard-image-5.png';
 import { Description } from './components';
+import { ContainerInfo } from './ContainerInfo';
+import { HireMeSeperator } from './HireMeSeperator';
 
 import { Container } from './Styled';
 
@@ -15,9 +21,11 @@ export default function DribbleOnBoardingPage() {
         <ContainerInfo />
         <Carousel
           images={[
-            'https://picsum.photos/700/400?img=1',
-            'https://picsum.photos/700/400?img=2',
-            'https://picsum.photos/700/400?img=3',
+            OnBoardImage1,
+            OnBoardImage2,
+            OnBoardImage3,
+            OnBoardImage4,
+            OnBoardImage5,
           ]}
         />
         <Description {...{ description1, description2 }}>
@@ -35,6 +43,7 @@ export default function DribbleOnBoardingPage() {
             </span>
           </p>
         </Description>
+        <HireMeSeperator />
       </div>
     </Container>
   );

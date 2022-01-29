@@ -1,18 +1,20 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 import UserImage from 'images/avatartInfo.png';
 import { DrippleButton } from 'components/Button/DrippleButton';
+import messages from './messages';
 import { Avatar } from './components';
 import { ContainerInfoWrapper } from './Styled';
 
 export const ContainerInfo = () => (
   <ContainerInfoWrapper>
     <div className="d-flex">
-      <Avatar img={UserImage} />
-      <div className="p-10">
+      <Avatar img={UserImage} height={50} width={50} />
+      <div className="p-10 ml-16">
         <div className="font-bold">Onboarding #Exploration</div>
         <div>
           <a href="/" className="title">
-            Eren ✦
+            <FormattedMessage {...messages.erenStar} />
           </a>
           <a href="/" className="title">
             {' '}

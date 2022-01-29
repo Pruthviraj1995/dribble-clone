@@ -12,7 +12,7 @@ export const Carousel = ({ images = [] }) => (
   <CarouselWrapper interval="5000" showStatus={false} showIndicators={false}>
     {images.map(image => (
       <div key={image}>
-        <img src={image} alt={image} />
+        <img src={image} alt={image} className="h-100 w-100" />
       </div>
     ))}
   </CarouselWrapper>

@@ -15,7 +15,7 @@ import DribbleOnBoardingPage from 'containers/DribbleOnBoardingPage/Loadable';
 import FeaturePage from 'containers/FeaturePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import DribbleHeader from 'components/DribbleHeader';
-// import Footer from 'components/Footer';
+import Footer from 'components/Footer';
 
 import GlobalStyle from '../../global-styles';
 
@@ -43,7 +43,7 @@ export default function App() {
         <Route path="/features" component={FeaturePage} />
         <Route path="" component={NotFoundPage} />
       </Switch>
-      {/* <Footer /> */}
+      <Footer />
       <GlobalStyle />
     </AppWrapper>
   );

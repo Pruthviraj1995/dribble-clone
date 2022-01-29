@@ -9,13 +9,15 @@ export const scope = 'boilerplate.components.Footer';
 
 export default defineMessages({
   licenseMessage: {
-    id: `${scope}.license.message`,
-    defaultMessage: 'This project is licensed under the MIT license.',
+    id: `${scope}.license-message`,
+    defaultMessage: '© 2022 Dribbble. All rights reserved.',
   },
-  authorMessage: {
-    id: `${scope}.author.message`,
-    defaultMessage: `
-      Made with love by {author}.
-    `,
+  dribbledCount: {
+    id: `${scope}.dribbled-count`,
+    defaultMessage: '17,387,085 ',
+  },
+  shotsDribbled: {
+    id: `${scope}.shots-dribbbled`,
+    defaultMessage: ' shots dribbbled',
   },
 });
