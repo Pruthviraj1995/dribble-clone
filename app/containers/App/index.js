@@ -11,20 +11,20 @@ import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import { Switch, Route } from 'react-router-dom';
 
-import HomePage from 'containers/HomePage/Loadable';
+import DribbleOnBoardingPage from 'containers/DribbleOnBoardingPage/Loadable';
 import FeaturePage from 'containers/FeaturePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
-import Header from 'components/Header';
-import Footer from 'components/Footer';
+import DribbleHeader from 'components/DribbleHeader';
+// import Footer from 'components/Footer';
 
 import GlobalStyle from '../../global-styles';
 
 const AppWrapper = styled.div`
-  max-width: calc(768px + 16px * 2);
-  margin: 0 auto;
+  max-width: 100%;
+  // margin: 0 10px;
   display: flex;
   min-height: 100%;
-  padding: 0 16px;
+  // padding: 0 16px;
   flex-direction: column;
 `;
 
@@ -37,13 +37,13 @@ export default function App() {
       >
         <meta name="description" content="A React.js Boilerplate application" />
       </Helmet>
-      <Header />
+      <DribbleHeader />
       <Switch>
-        <Route exact path="/" component={HomePage} />
+        <Route exact path="/" component={DribbleOnBoardingPage} />
         <Route path="/features" component={FeaturePage} />
         <Route path="" component={NotFoundPage} />
       </Switch>
-      <Footer />
+      {/* <Footer /> */}
       <GlobalStyle />
     </AppWrapper>
   );
