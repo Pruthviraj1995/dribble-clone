@@ -2,15 +2,21 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
   height: 100%;
   width: 100%;
-  max-width: 1200px;
+  align-items: center;
+  padding: 64px 120px;
 
   .title {
     color: black;
     text-decoration: none;
+  }
+
+  .sub-container {
+    width: 800px;
   }
 `;
 
@@ -29,6 +35,6 @@ export const ContainerInfoWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 64px 120px;
   align-items: center;
+  margin-bottom: 40px;
 `;

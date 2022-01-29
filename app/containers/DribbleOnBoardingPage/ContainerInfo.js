@@ -16,18 +16,21 @@ export const ContainerInfo = () => (
           </a>
           <a href="/" className="title">
             {' '}
-            <span className="pink-color"> &#8226;</span> Follow{' '}
-            <span className="pink-color"> &#8226;</span>{' '}
+            <span className="pink-color pl-5 pr-5"> &#8226;</span> Follow{' '}
+            <span className="pink-color pl-5 pr-5"> &#8226;</span>{' '}
           </a>
           <span className="pink-color cursor-pointer">Hire Me</span>
         </div>
       </div>
     </div>
     <div className="d-flex mr-1">
-      <DrippleButton className="mr-10" isLight>
+      <DrippleButton className="mr-10" isLight title="Save Shot">
         Save
       </DrippleButton>
-      <DrippleButton isLight> &#10084; Like</DrippleButton>
+      <DrippleButton title="Like this shot" isLight>
+        {' '}
+        &#10084; Like
+      </DrippleButton>
     </div>
   </ContainerInfoWrapper>
 );

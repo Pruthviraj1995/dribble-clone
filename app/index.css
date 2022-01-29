@@ -1,5 +1,14 @@
+* {
+  font-family: 'Haas Grot Text R Web', 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+}
+
 .pink-color {
   color: #6e6d7a;
+}
+
+.pink-color-100 {
+  color: #ea4c89;
 }
 
 .cursor-pointer {
@@ -8,4 +17,9 @@
 
 .font-bold {
   font-weight: bold;
+}
+
+.font-description {
+  font-family: 'Haas Grot Text R Web', 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
 }
