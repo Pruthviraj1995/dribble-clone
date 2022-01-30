@@ -11,6 +11,10 @@
     padding-top: ($i) * 1px !important;
   }
 
+  .pb-#{$i} {
+    padding-bottom: ($i) * 1px !important;
+  }
+
   .ml-#{$i} {
     margin-left: ($i) * 1px !important;
   }
@@ -32,10 +36,14 @@
   }
 
   .font-weight-#{$i} {
-    font-weight: ($i) * 10px !important;
+    font-weight: ($i) * 10 !important;
   }
 
   .height-#{$i} {
     height: ($i) * 1px !important;
+  }
+
+  .width-#{$i} {
+    width: ($i) * 1px !important;
   }
 }

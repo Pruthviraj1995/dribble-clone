@@ -12,7 +12,7 @@ import styled from 'styled-components';
 import { Switch, Route } from 'react-router-dom';
 
 import DribbleOnBoardingPage from 'containers/DribbleOnBoardingPage/Loadable';
-import FeaturePage from 'containers/FeaturePage/Loadable';
+// import FeaturePage from 'containers/FeaturePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import DribbleHeader from 'components/DribbleHeader';
 import Footer from 'components/Footer';
@@ -28,19 +28,23 @@ const AppWrapper = styled.div`
   flex-direction: column;
 `;
 
+// Clone for this Page - https://dribbble.com/shots/15669113-Onboarding-Exploration
+
+// ScrollIntoView https://stackoverflow.com/questions/30495062/how-can-i-scroll-a-div-to-be-visible-in-reactjs
+
 export default function App() {
   return (
     <AppWrapper>
       <Helmet
-        titleTemplate="%s - React.js Boilerplate"
-        defaultTitle="React.js Boilerplate"
+        titleTemplate="Onboarding #Exploration by Eren ✦ on Dribbble"
+        defaultTitle="Onboarding #Exploration by Eren ✦ on Dribbble"
       >
-        <meta name="description" content="A React.js Boilerplate application" />
+        <meta name="description" content="Onboarding #Exploration" />
       </Helmet>
       <DribbleHeader />
       <Switch>
         <Route exact path="/" component={DribbleOnBoardingPage} />
-        <Route path="/features" component={FeaturePage} />
+        {/* <Route path="/features" component={FeaturePage} /> */}
         <Route path="" component={NotFoundPage} />
       </Switch>
       <Footer />

@@ -1,21 +1,16 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
 
+import { FooterLogo } from './FooterLogo';
+import { FooterCopyRight } from './FooterCopyRight';
 import Wrapper from './Wrapper';
-import messages from './messages';
 
 function Footer() {
   return (
     <Wrapper>
-      <section className="pink-color">
-        <FormattedMessage {...messages.licenseMessage} />
-      </section>
-      <section>
-        <FormattedMessage {...messages.dribbledCount} />
-        <span className="pink-color">
-          <FormattedMessage {...messages.shotsDribbled} />
-        </span>
-      </section>
+      <div className="footer-container">
+        <FooterLogo />
+      </div>
+      <FooterCopyRight />
     </Wrapper>
   );
 }

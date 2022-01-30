@@ -26,10 +26,10 @@ export const ContainerInfo = () => (
       </div>
     </div>
     <div className="d-flex mr-1">
-      <DrippleButton className="mr-10" isLight title="Save Shot">
+      <DrippleButton className="mr-10 font-bold" isLight title="Save Shot">
         Save
       </DrippleButton>
-      <DrippleButton title="Like this shot" isLight>
+      <DrippleButton className="font-bold" title="Like this shot" isLight>
         {' '}
         &#10084; Like
       </DrippleButton>
