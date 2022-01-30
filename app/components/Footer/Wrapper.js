@@ -4,7 +4,7 @@ const Wrapper = styled.footer`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0 32px;
+  padding: 0 72px;
   background: #fafafb;
 
   .footer-container {
